@@ -1,0 +1,24 @@
+programa {
+  
+  funcao inicio() {
+    inteiro base, expoente
+    
+    escreva("Fale a base: ")
+    leia(base)
+    escreva("Fale o expoente: ")
+    leia(expoente)
+    
+    elevacao(base, expoente)
+  }
+
+  funcao vazio elevacao(inteiro base, inteiro expoente) {
+    inteiro multi = 1
+
+    para (inteiro i = 1; i <= expoente; i++) {
+      multi = multi * base
+    }
+    
+    escreva(base, " elevado a ", expoente, " é igual a ", multi, "\n")
+    retorne
+  }
+}
